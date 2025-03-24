@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ramadhan 1446 Hijriah</title>
+    <script>
+        // alert (menampilkan pesan pada browser)
+        alert("Tes tes 123");
+
+        // Date() untuk menampilkan tanggal saat ini
+        function tampilkanTanggal() {
+            let tanggal = new Date();
+            document.getElementById("tanggal").innerHTML = tanggal;
+        }
+
+        // untuk menampilkan alert tampil()
+        function tampil() {
+            alert("Ini adalah button");
+        }
+
+        // untuk menampilkan alert show()
+        function show() {
+            alert("Ini adalah pop up untuk tulisan perkenalan");
+        }
+    </script>
+</head>
+<body onload="tampilkanTanggal()">
+    <div class="container">
+        <h1>Ramadhan 1446 Hijriah</h1>
+        
+        <div class="image-container">
+            <img src="RAMADHAN-CERIA.jpg" alt="image" width="400" height="700">
+        </div>
+
+        <h3>🌙 Selamat Menunaikan Ibadah Puasa! 🌟</h3>
+        <p>
+            Marhaban ya Ramadhan! Bulan penuh berkah akhirnya tiba! Saatnya kita menyucikan hati, memperbanyak ibadah, dan berbagi kebahagiaan dengan sesama. Semoga setiap doa dikabulkan, setiap langkah mendapat pahala, dan Ramadhan kali ini menjadi yang terbaik dalam hidup kita. Selamat berpuasa dan tetap semangat! ✨💫
+        </p>
+        
+        <p id="tanggal"></p>
+        <button onclick="tampil()">Klik Saya</button>
+        <button onclick="show()">Pop Up</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
